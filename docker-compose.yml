@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jltest:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: jltest
+    ports:
+      - 9090:80
+    volumes:
+      - .:/var/www
